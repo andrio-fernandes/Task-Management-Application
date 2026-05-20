@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:5000/api/auth";
-const TASK_API = "http://localhost:5000/api/tasks";
+const API_URL ="https://task-management-application-backend-bnvj.onrender.com/api/auth";
+const TASK_API ="https://task-management-application-backend-bnvj.onrender.com/api/tasks";
 
 const token = localStorage.getItem("token");
 
