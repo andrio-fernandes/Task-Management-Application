@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <div class="topbar">
+
+      <h1>Task Manager</h1>
+
+      <button id="logoutBtn">Logout</button>
+
+    </div>
+    <div class="stats">
+
+  <div class="stat-box">
+    <h2 id="totalTasks">0</h2>
+    <p>Total</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 id="completedTasks">0</h2>
+    <p>Completed</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 id="pendingTasks">0</h2>
+    <p>Pending</p>
+  </div>
+
+</div>
+
+    <form id="taskForm">
+
+      <input type="text" id="taskTitle" placeholder="Task title" required>
+
+      <input type="text" id="taskDescription" placeholder="Task description">
+
+      <input type="date" id="taskDate">
+
+      <button type="submit">Add Task</button>
+
+    </form>
+
+    <div id="taskList"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
