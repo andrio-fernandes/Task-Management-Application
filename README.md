@@ -93,6 +93,8 @@ https://github.com/andrio-fernandes/Task-Management-Application-Backend
 
 # 📂 Project Structure
 
+```text
+task-management-app/
 
 ├── client/
 │   ├── index.html
@@ -112,7 +114,19 @@ https://github.com/andrio-fernandes/Task-Management-Application-Backend
 │
 └── README.md
 ```
+# 📸 Screenshots
 
+---
+## Home Page
+<img width="1200" height="562" alt="image" src="https://github.com/user-attachments/assets/2dbd8de0-1b7a-46cb-8ab3-aafb36b37de0" />
+
+---
+## Login Page
+<img width="658" height="472" alt="image" src="https://github.com/user-attachments/assets/571ae48b-f4ce-41fb-8056-3707250663f5" />
+
+---
+## Dashboard
+<img width="927" height="621" alt="image" src="https://github.com/user-attachments/assets/99bc3a04-16cb-4d67-8f25-ec4f50a4f3f5" />
 
 
 # 📚 Learning Outcomes
