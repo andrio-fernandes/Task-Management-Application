@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Profile</h1>
+
+    <form id="profileForm">
+
+      <input type="text" id="profileName" placeholder="Name" required>
+
+      <input type="email" id="profileEmail" placeholder="Email" readonly>
+
+      <input type="password" id="currentPassword"
+             placeholder="Current password (to change password)">
+
+      <input type="password" id="newPassword"
+             placeholder="New password (min 6 characters)">
+
+      <button type="submit">Save Changes</button>
+
+    </form>
+
+    <p>
+      <a href="dashboard.html">Back to dashboard</a>
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

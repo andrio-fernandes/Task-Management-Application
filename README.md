@@ -5,11 +5,12 @@ A full-stack Task Management Application built using HTML, CSS, JavaScript, Node
 Users can:
 
 * Register & Login securely
-* Create tasks
-* Edit tasks
-* Mark tasks as completed
-* Delete tasks
-* Track task statistics
+* Create, edit and delete tasks with a modal editor
+* Mark tasks as completed (or revert them)
+* Search, filter and sort tasks
+* Undo a delete from the toast notification
+* Track task statistics and view completion charts
+* Manage their profile (name + password)
 
 ---
 
@@ -39,27 +40,44 @@ https://github.com/andrio-fernandes/Task-Management-Application-Backend
 * User Registration
 * User Login
 * JWT Authentication
-* Protected Dashboard
+* Protected Dashboard & Profile pages
+* Session-expired handling (auto logout on 401)
 
 ## ✅ Task Management
 
 * Add Tasks
 * View Tasks
-* Edit Tasks
-* Delete Tasks
-* Mark Tasks as Completed
+* Edit Tasks via an accessible modal (title, description, status, due date)
+* Delete Tasks with confirmation + **Undo** toast
+* Mark Tasks as Completed / Revert to Pending
+* Overdue badge for tasks past their due date
+* Pagination with a **Load more** button
+
+## 🔎 Search, Filter & Sort
+
+* Live search across title and description (debounced, server-side)
+* Filter by status (All / Pending / Completed)
+* Sort by newest, oldest, due date or title
+
+## 👤 Profile
+
+* View and update your name
+* Change password (verified against your current password)
 
 ## 📊 Dashboard
 
-* Total Tasks Counter
-* Completed Tasks Counter
-* Pending Tasks Counter
+* Total / Completed / Pending counters (server-wide)
+* Completion ring chart (conic-gradient)
+* Last 7 days activity bar chart
+* Skeleton loading placeholders while fetching
 
-## 📱 Responsive UI
+## 🎨 UI / UX
 
+* Neumorphism (soft UI) design with inset/raised shadows
+* Loading screen + toast notifications (no browser alerts)
+* Accessible modal: focus trap, Esc/overlay close, scroll lock
+* XSS-safe rendering of task content
 * Mobile Responsive Design
-* Clean Dashboard Layout
-* Interactive Buttons & Cards
 
 ---
 
@@ -101,6 +119,7 @@ task-management-app/
 │   ├── login.html
 │   ├── register.html
 │   ├── dashboard.html
+│   ├── profile.html
 │   ├── style.css
 │   └── script.js
 │
@@ -137,9 +156,13 @@ Through this project, I learned:
 * JWT Authentication
 * MongoDB integration
 * CRUD operations
+* Pagination & search API design
 * Frontend & Backend connection
 * Deployment of full-stack applications
 * Responsive UI design
+* Neumorphic UI styling
+* Web accessibility (focus management, ARIA dialogs)
+* Preventing XSS and IDOR vulnerabilities
 
 ---
 
