@@ -17,7 +17,7 @@ Users can:
 ## 🚀 Live Demo
 
 ### Frontend
-https://andrio-fernandes.github.io/Task-Management-Application/
+https://task-management-application-livid-nu.vercel.app
 
 ### Backend API
 https://task-management-application-backend-bnvj.onrender.com
