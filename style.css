@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -167,25 +169,28 @@ a {
   margin-bottom: 32px;
 }
 
-.topbar h1 {
+.topbar-left h1 {
   color: var(--heading);
   font-size: 32px;
+}
+
+.welcome-text {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.welcome-text:empty {
+  display: none;
 }
 
 .topbar-right {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.user-name {
-  color: var(--text-muted);
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.user-name:empty {
-  display: none;
 }
 
 .profile-link {

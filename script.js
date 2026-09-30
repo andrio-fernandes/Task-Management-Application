@@ -362,11 +362,19 @@ if (logoutBtn) {
 
 }
 
-const userNameEl = document.getElementById("userName");
+const welcomeTextEl = document.getElementById("welcomeText");
 
-if (userNameEl) {
-    userNameEl.textContent = localStorage.getItem("userName") || "";
+function renderUserGreeting() {
+
+    const name = localStorage.getItem("userName") || "";
+
+    if (welcomeTextEl) {
+        welcomeTextEl.textContent = name ? `Welcome, ${name}` : "";
+    }
+
 }
+
+renderUserGreeting();
 
 
 // ======================
